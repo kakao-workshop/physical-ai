@@ -40,7 +40,7 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 
 | 행사 | 언제, 어디 | 장비 | 대표 결과물 |
 |---|---|---|---|
-| [Seeed × Hackster Embodied AI](#seeed--hackster-embodied-ai-hackathon) | 2025-03 마운틴뷰 | SO-ARM100, Jetson Orin NX(제공) | 양팔 협업 그릇 옮기기(GR00T N1) |
+| [Seeed × Hackster Embodied AI](#seeed--hackster-embodied-ai-hackathon) | 2025-03 마운틴뷰 | SO-ARM100, Jetson Orin NX(제공) | 양팔 그릇 옮기기(GR00T N1), 이동 로봇팔, 틱택토 로봇 |
 | [Mistral AI Robotics Hackathon](#mistral-ai-robotics-hackathon) | 2025-04 파리 | SO-100 40대 이상(제공) | 「Guess Who」 게임 로봇 |
 | [LeRobot Worldwide Hackathon](#lerobot-worldwide-hackathon) | 2025-06 전 세계 | 지참(SO-100/101 등) | 이동 레일 단 팔의 샌드위치 쌓기 |
 | [LeRobot 서울, 대구](#lerobot-worldwide-서울과-대구) | 2025-06 서울, 대구 | 서울 지참, 대구 SO-101 지급 | 색 반응 집어 꽂기(글로벌 8위), 양팔 공중 전달(20위) |
@@ -50,6 +50,7 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 | [한성대 × 로보시지 제1회](#한성대--로보시지-제1회-physical-ai-해커톤) | 2026-02 서울 | SO-ARM 양팔(제공) | 3종목(색 분류, 정밀 포장, 접기) |
 | [창원대 전국 대학생 피지컬AI](#창원대-전국-대학생-피지컬ai-해커톤) | 2026-02 창원 | SO-101 | 물체 5개 바구니 넣기 랩타임 |
 | [LeHome Challenge (ICRA)](#lehome-challenge-2026) | 2026-02~06 온라인, 빈 | SO-ARM101 양팔 | 의류 4종 개기 |
+| [Revolute Boston](#revolute-boston-physical-ai-hackathon) | 2026-08 케임브리지 | reBot B601-RS(제공) | 음성으로 지시하는 요리 로봇 |
 | [Cook with reBot](#seeed-studio-cook-with-rebot) | 2026-04 선전 | reBot B601-DM(제공) | 계란 깨서 굽기 |
 | [로보틱어스 제1회 로봇 해커톤](#로보틱어스-제1회-로봇-해커톤) | 2026-08 대전 | 구동기 6축, Jetson AGX(제공) | 아기 요람 로봇, 머리 따라가는 폰 팔 |
 | [PAC 2026 피지컬 AI 챌린지](#pac-2026-피지컬-ai-챌린지) | 2026-10 대구 | PiPER, SO-101(제공) | 사과 등급 분류 등 기업 미션 |
@@ -60,17 +61,35 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 
 - 2025-03-22~23, 미국 마운틴뷰 Circuit Launch(GTC 2025 주말). Seeed Studio, Hugging Face, NVIDIA, Hackster.io. 규모는 출처마다 다르다(행사 페이지 참석 116명, Seeed 영상 설명 「약 150명 지원, 30명 가까운 개발자」).
 - **방식**. 주최가 SO-ARM100 키트, Jetson Orin NX, 카메라와 마이크를 제공했다. 자유 주제이고 LeRobot 사용이 필수였다. 문서 30, 영상 30, 코드와 기여 20, 창의성 20으로 채점했다.
-- **1위**. SO-100 두 쌍으로 **양팔 협업 그릇 옮기기**. 공개된 지 사흘 된 GR00T N1을 양팔용으로 고쳐 미세조정했고 ACT와 Pi0도 실험했다. 남긴 교훈은 「Calibration is Important!!!」.
+- **수상작** (Hackster 수상 발표와 프로젝트 페이지 기준)
+
+| 상 | 팀, 작품 | 한 일 |
+|---|---|---|
+| 1위 | Firebreathing Rubber Duckies | SO-100 두 쌍으로 **양팔 협업 그릇 옮기기**. 공개된 지 사흘 된 GR00T N1을 양팔용으로 고쳐 미세조정했고 ACT와 Pi0도 실험했다. 남긴 교훈은 「Calibration is Important!!!」 |
+| 2위 | CL Home Team, **OmniFetch** | 이동 로봇(AMR) 위에 로봇팔을 올리고 손목 제스처로 조종하는 로봇 비서. 위험물 처리와 산업 현장 배송을 겨냥했다. 이동 로봇이 멈추는 자리가 매번 몇 cm씩 달라져서, 기록한 동작을 그대로 재생하는 대신 AI 정책으로 집게 했다 |
+| 3위 | **LeGoRobot** | SO-100 팔이 빨간 레고 블록을 집는다 |
+| 장려 | **Smart Recycle** | ACT와 Pi0로 플라스틱과 음식물 등 쓰레기를 알아보고 알맞은 통에 넣는다 |
+| 장려 | Team Bubble Bot, **Tic!** | SO-ARM100 두 대로 **사람과 틱택토를 두는 로봇** |
+
+{% include figure.html src="assets/images/hackathons/seeed-hackster-tictactoe.jpg" alt="Tic! 팀의 시연 에피소드 장면. 위 줄은 위에서 본 3×3 격자와 녹색, 파란 블록, 로봇이 파란 블록을 격자 칸에 놓는 모습. 아래 줄은 손목 카메라" caption="장려상 Tic!의 행사 당일 시연 데이터(25초)를 다섯으로 나눈 장면. 사람이 녹색 블록을 두면 로봇이 파란 블록을 빈 칸에 놓는다. 위는 위쪽 카메라, 아래는 손목 카메라. 출처 Hugging Face 데이터셋 bnarin/so100_tic_tac_toe_we_do_it_live (팀원 Benjamin Narin, Apache-2.0)" %}
+
+{% include youtube.html id="39TPuKtJ-2A" title="OmniFetch Seeed Hackathon" caption="2위 OmniFetch 데모(팀원 채널, 2025-03-23 행사 당일, 2분 38초)" %}
+
+{% include youtube.html id="G5uG1W48XKE" title="Seeed Embodied AI Hackathon @ Circuit Launch Mountain View" caption="심사위원으로 참가한 OpenCV 쪽 현장 영상(2025-03-25, 7분 7초). 팀별 작품을 돌아본다" %}
+
 {% include youtube.html id="QvzhsDliGII" title="Seeed Embodied AI Hackathon San Jose" caption="Seeed Studio 공식 영상(2025-04-17, 6분 43초). 36시간 동안의 개발과 데모" %}
 
-- 출처. [대회 페이지](https://www.hackster.io/contests/embodiedAI), [수상 발표](https://www.hackster.io/news/embodied-ai-hackathon-winners-announced-2dc69c76942e), [1위 글](https://www.hackster.io/firebreathing-rubber-duckies/running-lerobot-so-100-arm-on-nvidia-isaac-gr00t-n1-458189), [1위 코드](https://github.com/JChunX/apple_pie/tree/seeed_hacks)
+- 출처. [대회 페이지](https://www.hackster.io/contests/embodiedAI), [수상 발표](https://www.hackster.io/news/embodied-ai-hackathon-winners-announced-2dc69c76942e), [1위 글](https://www.hackster.io/firebreathing-rubber-duckies/running-lerobot-so-100-arm-on-nvidia-isaac-gr00t-n1-458189), [1위 코드](https://github.com/JChunX/apple_pie/tree/seeed_hacks), [OmniFetch](https://www.hackster.io/cl-home-team/omnifetch-omnibot-amr-and-lerobot-ai-5591a8), [LeGoRobot](https://www.hackster.io/legorobot/legorobot-fe18a4), [Smart Recycle](https://www.hackster.io/532247/smart-recycle-8e1df3), [Tic!](https://www.hackster.io/team-bubble-bot/tic-your-tic-tac-toe-playing-robot-with-embodied-ai-02f91e). 프로젝트 페이지 사진은 라이선스 표기가 없어 옮기지 않았다
 
 ### Mistral AI Robotics Hackathon
 
 - 2025-04-11~13, 파리. Entrepreneurs First 주최, Mistral AI가 모델과 심사, Hugging Face가 로봇팔 40대 이상과 멘토 지원. 정원 100명, 5인 팀, 48시간.
 - **방식**. 자유 주제(Mistral 모델 활용). 데이터셋과 2분 영상을 Hugging Face에 올리고 피치로 심사.
 - **2위 LeCopain**. 동물 캐릭터로 **「Guess Who?」 게임을 하는 로봇**. 음성을 Whisper로 받아 적고, Mistral 소형 모델이 보드를 보고 「제거할 동물」을 정하고, **목표 칸 위치를 조건으로 받는 ACT 정책 하나**가 카드를 넘긴다. 시연 96개.
-- 다른 팀 과제(데이터셋 이름 기준). 그림 그리기, 피아노, 캔 쌓기, 물 붓기, 접시 닦기, 공 쌓기.
+- 다른 팀 과제(데이터셋 이름 기준). 그림 그리기, 피아노, 컵 쌓기, 물 붓기, 접시 닦기, 공 쌓기, 닭 모형 접시에 놓기.
+
+{% include figure.html src="assets/images/hackathons/mistral-projects.jpg" alt="Mistral 해커톤 다섯 작품의 시연 장면. Guess Who 카드 넘기기, 피아노 치기, 컵 쌓기, 물 붓기, 닭 모형을 접시에 놓기" caption="팀들이 행사 중 올린 시연 데이터 한 에피소드씩을 다섯으로 나눈 장면. 위에서부터 2위 LeCopain의 Guess Who 카드 넘기기(손목 카메라), 피아노 치기, 컵 쌓기(데이터셋 이름은 can-stacking), 물 붓기, 닭 모형을 접시에 놓기. 출처 Hugging Face roboticshack 조직의 team2-guess_who_so100, team11_pianobot, team16-can-stacking, team16-water-pouring, team9-pick_chicken_place_plate 데이터셋 (모두 Apache-2.0)" %}
+
 {% include youtube.html id="A4-CyfDBj3o" title="Mistral AI Robotics Hackathon" caption="행사 스케치 영상(EPYTOME, 2025-04-25, 3분 45초). 설명란 기준 「20 teams. 100 talents. 30 hours.」" %}
 
 - 출처. [Luma](https://luma.com/roboticshack), [Hugging Face 조직](https://huggingface.co/roboticshack), [LeCopain 블로그](https://huggingface.co/blog/Beegbrain/guess-who-so100-mistral), [LeCopain 코드](https://github.com/alexcbb/LeCopain)
@@ -160,10 +179,23 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 
 - 출처. [공식](https://lehome-challenge.com), [2위 팀 논문](https://huggingface.co/papers/2606.27163)
 
+### Revolute Boston Physical AI Hackathon
+
+- 2026-08-01~02, 미국 케임브리지 FabLab Kendall. Fab Foundation 주최, Seeed Studio가 장비 후원. 「보스턴의 첫 로봇과 Physical AI 해커톤」, 참가자 30명, 로봇 하드웨어 1만 5천 달러어치.
+- **방식**. 팀마다 reBot Arm B601-RS와 리더 팔, Jetson Orin Nano, USB 카메라 두 대를 줬다. 테마는 「Cooking with robot arms!」이고 목표는 「재미있게, 새로 배우고, 멋진 것(적어도 조금은 먹을 수 있는 것)을 만들기」. 팀에 하드웨어, 소프트웨어, 로봇 중 하나를 아는 사람이 한 명 이상 있어야 했다. 상금은 1,000달러 이상.
+
+{% include figure.html src="assets/images/hackathons/revolute-setup.svg" alt="Revolute 해커톤의 팀당 장비 네 가지와 토요일, 일요일 일정" caption="팀당 장비와 이틀 일정(공식 사이트 내용을 바탕으로 그림)" %}
+
+- **결과물**. 2위 **YesChef**는 말로 지시하면 요리 동작을 하는 로봇팔이다. 음성 인식(Whisper), 장면 이해(Qwen 2.5 3B VLM), 지시 해석(Qwen 2.5 3B)의 세 모델을 로컬에서 엮었다. 1위와 다른 수상작은 미확인.
+
+{% include youtube.html id="7AaO0o-qSSI" title="YesChef - Voice Controlled Robotic Manipulation for Cooking" caption="2위 YesChef 데모(팀원 채널, 2026-09-08, 1분 50초)" %}
+
+- 현장 사진은 [공식 갤러리](https://revolutehack.com/gallery/)에 있다(사진 James R Desmond, 라이선스 표기가 없어 옮기지 않았다). 2026-10-09에는 같은 주최가 reBot 팔 워크숍을 열었다.
+- 출처. [공식](https://revolutehack.com), [Luma](https://luma.com/kxq4yxr8)
+
 ### 그 밖의 해외 행사
 
 - **Physical AI Hack World Tour SF** (2026-05). 300명, 장비 현장 제공. 주최가 과제를 지정했다(토스트 굽기, QR 코드 스캔, 식탁 차리기). 결과 미확인. [Luma](https://luma.com/0xbcm3kj)
-- **Revolute Boston Physical AI Hackathon** (2026-08-01~02). 정원 30명, reBot B601-RS, 테마는 요리. 과학전람회처럼 심사위원이 테이블을 돌았다. 결과 미확인. [공식](https://revolutehack.com)
 - **Europe Embodied 2026** (2026-06, 뮌헨). 트랙 셋 중 하나가 산업용 로봇팔. 종합 1위는 무게 같은 물리 성질을 VLM 로봇의 입력으로 넣은 팀. [TUM](https://tum-international.com/europe-embodied-2026-48-hour-hackathon/)
 - **온라인 행사**. [LabLab AI Meets Robotics](https://lablab.ai/blog/ai-meets-robotics-hackathon-summary)(2026-02, 1위 책 읽어주는 로봇팔), [AI Infra Summit](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon)(2026-09, 시뮬레이션에서 SO-101 두 대로 식탁 차리기).
 

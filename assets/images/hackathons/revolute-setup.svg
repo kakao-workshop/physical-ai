@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Revolute Boston 해커톤의 팀당 장비와 이틀 일정</title>
+  <desc id="d">팀마다 reBot Arm B601-RS 한 대, 리더 팔, Jetson Orin Nano, USB 카메라 두 대를 받았다. 토요일 오전 튜토리얼 뒤 오후 2시부터 밤 10시까지, 일요일 오후 3시까지 개발하고 과학전람회식 데모 심사, 오후 4시에 GitHub와 문서와 1분 영상을 제출했다</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #27262b; }
+    .h { font-size: 15px; font-weight: 700; }
+    .b { font-size: 12.5px; fill: #3d3b42; }
+    .t { font-size: 11.5px; fill: #5c5962; }
+  </style>
+  <rect width="800" height="300" fill="#ffffff"/>
+
+  <!-- 장비 -->
+  <rect x="12" y="12" width="300" height="276" rx="10" fill="#f3faf6" stroke="#0d8a5f" stroke-width="1.5"/>
+  <text x="28" y="40" class="h">팀마다 받은 장비</text>
+  <g transform="translate(28,58)">
+    <rect width="26" height="26" rx="5" fill="#0d8a5f"/><text x="38" y="12" class="b" style="font-weight:700">reBot Arm B601-RS</text><text x="38" y="28" class="t">48V QDD 모터, 가반하중 2.5kg</text>
+  </g>
+  <g transform="translate(28,104)">
+    <rect width="26" height="26" rx="5" fill="#6aa58a"/><text x="38" y="12" class="b" style="font-weight:700">리더 팔</text><text x="38" y="28" class="t">텔레오퍼레이션과 모방학습용</text>
+  </g>
+  <g transform="translate(28,150)">
+    <rect width="26" height="26" rx="5" fill="#27262b"/><text x="38" y="12" class="b" style="font-weight:700">Jetson Orin Nano 8GB</text><text x="38" y="28" class="t">추론용 엣지 컴퓨터</text>
+  </g>
+  <g transform="translate(28,196)">
+    <rect width="26" height="26" rx="5" fill="#7253ed"/><text x="38" y="12" class="b" style="font-weight:700">USB 카메라 2대</text><text x="38" y="28" class="t">위에서 한 대, 손목에 한 대</text>
+  </g>
+  <text x="28" y="268" class="t">테마 「Cooking with robot arms!」, 정원 30명</text>
+
+  <!-- 일정 -->
+  <text x="336" y="40" class="h">이틀 일정 (2026-08-01~02)</text>
+  <text x="336" y="74" class="b" style="font-weight:700">토</text>
+  <rect x="366" y="58" width="60" height="24" rx="4" fill="#ebe6fd"/><text x="396" y="74" text-anchor="middle" class="t">튜토리얼</text>
+  <rect x="430" y="58" width="62" height="24" rx="4" fill="#f1eff5"/><text x="461" y="74" text-anchor="middle" class="t">개막, 점심</text>
+  <rect x="496" y="58" width="280" height="24" rx="4" fill="#cfeedd"/><text x="636" y="74" text-anchor="middle" class="b">개발 14:00~22:00</text>
+  <text x="366" y="100" class="t">10:00</text><text x="496" y="100" class="t">14:00</text><text x="776" y="100" text-anchor="end" class="t">22:00</text>
+
+  <text x="336" y="146" class="b" style="font-weight:700">일</text>
+  <rect x="366" y="130" width="250" height="24" rx="4" fill="#cfeedd"/><text x="491" y="146" text-anchor="middle" class="b">문 열림 10:00, 데모 전까지 개발</text>
+  <rect x="620" y="130" width="96" height="24" rx="4" fill="#fdf0e0"/><text x="668" y="146" text-anchor="middle" class="t">데모 심사</text>
+  <rect x="720" y="130" width="56" height="24" rx="4" fill="#27262b"/><text x="748" y="146" text-anchor="middle" class="t" style="fill:#ffffff">제출</text>
+  <text x="366" y="172" class="t">10:00</text><text x="620" y="172" class="t">15:00</text><text x="776" y="172" text-anchor="end" class="t">16:00</text>
+
+  <rect x="336" y="196" width="440" height="84" rx="8" fill="#f6f5f9" stroke="#d7d5dd"/>
+  <text x="350" y="220" class="b">심사. 과학전람회처럼 심사위원이 테이블을 돌며 데모를 본다</text>
+  <text x="350" y="244" class="b">제출. GitHub 저장소, 프로젝트 문서, 1분 영상</text>
+  <text x="350" y="268" class="t">실제 개발 시간은 14시간 안팎으로 짧다 (일정표 기준 추정)</text>
+</svg>

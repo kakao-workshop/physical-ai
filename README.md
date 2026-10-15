@@ -39,7 +39,11 @@
 
 - `assets/images/hackathons/lechef-episode.jpg` — [LeRobot-worldwide-hackathon/22-leChef-leChef_dataset](https://huggingface.co/datasets/LeRobot-worldwide-hackathon/22-leChef-leChef_dataset)의 에피소드 영상에서 장면을 뽑아 이어 붙였다. [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 - `assets/images/hackathons/seengrip-episode.jpg` — [LeRobot-worldwide-hackathon/201-SeeNGripandBigBrothers-SquidGameSeeNGrip](https://huggingface.co/datasets/LeRobot-worldwide-hackathon/201-SeeNGripandBigBrothers-SquidGameSeeNGrip)의 에피소드 영상에서 장면을 뽑아 이어 붙였다. [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-- 나머지 그림(`assets/images/*.svg`, `pac2026-missions.svg`)은 이 저장소에서 직접 그렸다. 영상은 유튜브 임베드로만 보여 준다.
+- `assets/images/hackathons/mistral-projects.jpg` — Hugging Face `roboticshack` 조직의 team2-guess_who_so100, team11_pianobot, team16-can-stacking, team16-water-pouring, team9-pick_chicken_place_plate 데이터셋 에피소드 영상에서 장면을 뽑아 이어 붙였다. Apache License 2.0.
+- `assets/images/hackathons/seeed-hackster-tictactoe.jpg` — [bnarin/so100_tic_tac_toe_we_do_it_live](https://huggingface.co/datasets/bnarin/so100_tic_tac_toe_we_do_it_live)에서 장면을 뽑았다. Apache License 2.0.
+- `assets/images/hardware/` — [TheRobotStudio/SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)(SO-101 사진, 위쪽 카메라 거치대, Apache-2.0), [SIGRobotics-UIUC/LeKiwi](https://github.com/SIGRobotics-UIUC/LeKiwi)(Apache-2.0), [Seeed-Projects/reBot-DevArm](https://github.com/Seeed-Projects/reBot-DevArm)(CERN-OHL-W-2.0), [WeGo-Robotics/wego-piper-web](https://github.com/WeGo-Robotics/wego-piper-web)(Apache-2.0), [pollen-robotics/reachy_mini](https://github.com/pollen-robotics/reachy_mini)(Apache-2.0)의 이미지를 크기만 줄이거나 잘라 썼다.
+- 라이선스 표기가 없는 사진(Hackster 프로젝트 페이지, Revolute 갤러리 등)은 옮기지 않고 링크만 단다.
+- 나머지 그림(`assets/images/*.svg`, `pac2026-missions.svg`, `revolute-setup.svg`)은 이 저장소에서 직접 그렸다. 영상은 유튜브 임베드로만 보여 준다.
 
 ## 로컬 미리보기
 
