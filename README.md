@@ -25,6 +25,16 @@
 - 영상이나 글을 길게 옮기지 않고 짧게 요약합니다.
 - 새로 더하면 `changelog.md`에 한 줄 남깁니다.
 
+## 그림과 영상 넣기
+
+- 그림은 `assets/images/`에 SVG로 두고 `figure.html` include로 넣는다. 다른 사람의 영상 화면이나 사진을 잘라 올리지 않는다.
+- 유튜브 영상은 `youtube.html` include로 넣는다(인자 `id`, `title`, `start`(초), `caption`, 세로 영상이면 `vertical=true`). 임베드가 허용된 공개 영상만 쓴다.
+
+```liquid
+{% include figure.html src="assets/images/pipeline.svg" alt="대체 텍스트" caption="설명" %}
+{% include youtube.html id="fi2axVPA7DA" title="제목" start=540 caption="설명" %}
+```
+
 ## 로컬 미리보기
 
 GitHub Pages와 같은 `github-pages` gem으로 빌드합니다. Ruby 3.x가 필요합니다.

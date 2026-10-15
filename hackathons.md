@@ -97,6 +97,8 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 
 - 2025-10-18~19 선전, 10-25~26 마운틴뷰. Seeed Studio, NVIDIA, Hugging Face. 「Over 700 developers registered, and more than 30 teams」.
 - **방식**. 테마는 「Home Task and Cooking Robots」. 아이디어를 먼저 내는 신청제. 주최가 SO-ARM101, StarAI 팔, Jetson AGX Thor를 제공했다. 권장 흐름은 시연 150개 이상 수집, ACT, Diffusion Policy, GR00T N1.5, SmolVLA 중 하나로 학습, Jetson Thor 배포.
+{% include youtube.html id="Y2ca3on6dd8" title="Over 100 Contestants Joined Our Embodied AI Hackathon!" caption="Seeed Studio 현장 영상(1분 27초). 양팔 조작, 천 접기, 여러 모델 협업 장면이 나온다" %}
+
 - **결과물**
   - 미국 1위 **Matcha Bot**. 양팔 XLeRobot으로 말차 붓기, 물 붓기, 휘젓기. 하위 과제마다 시연 약 30개, GR00T N1.5. 모델이 지난 동작을 기억하지 못해 **장면에 문맥을 새겼다**(다 부은 용기는 떨어뜨리고, 그릇 상태가 눈으로 구분되게).
   - 미국 2위 **Sprinkle Robot**. 설탕을 뿌리고 버튼으로 접시를 돌린다. SmolVLA 시연 170개, 긴 과제를 **잡기, 기울이기, 누르기, 놓기 네 모델로 쪼갰다.**
@@ -123,6 +125,8 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 
 - 2026-04-25~26, 중국 선전. Seeed Studio. 48시간, 50명 이상 7팀.
 - **방식**. 팀마다 reBot Arm B601-DM, Jetson Orin NX, Orbbec Gemini2 깊이 카메라, 주방 작업대를 줬다. 정해진 미션은 「로봇팔이 요리 한 접시를 혼자 완성하기」. 현장 영상에서는 ACT와 카메라 세 대를 썼다고 했다.
+{% include youtube.html id="3W_z89ngXDo" title="48-hour reBot Arm Hackathon" caption="Cook with reBot 현장 영상(3분 4초). 볶음 동작 훈련과 팀별 발표" %}
+
 - **결과물**. 소프트 그리퍼와 힘 제어로 **계란 깨서 굽기**, 도구 바꿔 쥐기, 쏟지 않고 붓기.
 - **주최 정리**. 세밀한 조작, 힘 제어, 정해지지 않은 환경에서의 강건함이 아직 약하다. 재료가 시뮬레이션과 다르게 움직이고 소스 농도가 바뀌었다.
 - 출처. [Seeed 블로그](https://www.seeedstudio.com/blog/2026/05/08/when-robotic-arms-learned-to-cook-a-48-hour-hackathon-story/), [영상](https://www.youtube.com/watch?v=3W_z89ngXDo)
@@ -157,6 +161,8 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 **대구** (2025-06-14~16, 영남일보)
 - 6개 대학 12팀 41명, **SO-101 지급**. 주제는 「산업과 일상의 자동화 로봇」.
 - KAIST 팀이 SmolVLA로 **두 팔이 공중에서 물건을 주고받는** 과제로 글로벌 20위를 했다. 그 밖에 배변패드 교체, 신발장 정리, 자연어 지시 피킹, 얼굴 따라가는 폰 거치대, 와인잔 닦기.
+{% include youtube.html id="KzXUnjyROz8" title="LeRobot 해커톤 대구 현장" caption="영남일보TV 현장 영상(2025-07-01, 19분 50초). 영남일보 대강당에서 무박 3일, 진행 시간 32시간 동안의 이야기" %}
+
 - 교훈. 일주일 전에 받아 조립했는데 그사이 LeRobot이 바뀌어 처음부터 다시 한 팀이 있었다. 리더와 팔로워 캘리브레이션을 따로 해야 해서 헤맸다.
 - 출처. [영남일보](https://www.yeongnam.com/web/view.php?key=20250616028496144), [영상](https://www.youtube.com/watch?v=KzXUnjyROz8), [KAIST](https://ee.kaist.ac.kr/en/research-achieve/ee-prof-dong-eui-changs-team-wins-third-prize-at-hugging-face-lerobot-worldwide-hackathon-for-developing-vla-based-collaborative-robot-object-transfer-system/)
 
@@ -171,6 +177,8 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 
 - 2026-02-07~08, 한성대. 80여 명 20팀. SO-ARM 100/101 두 대로 만든 양팔.
 - **3종목을 현장에서 공개**하고 팀이 골랐다. Tri-Color Classifier(색 분류), Precision Packing(정밀 포장), Fine Folding(접기). 종목별로 시상했다. 수상팀과 채점 기준은 미확인.
+{% include youtube.html id="fi2axVPA7DA" title="제1회 Physical AI 해커톤 대회, 한성대 × 로보시지" caption="한성대 × 로보시지 해커톤 현장 영상(14분 25초). 팀별 흰 칸막이 부스, 보라색 SO-ARM 양팔, 밤샘 작업과 시상" %}
+
 - 현장 영상에는 카메라 해상도와 프레임이 맞지 않아 데이터셋을 버리고, 하룻밤에 시연 23개밖에 못 모은 팀이 나온다.
 - 출처. [대학저널](https://dhnews.co.kr/news/view/1065570802488898), [영상](https://www.youtube.com/watch?v=fi2axVPA7DA)
 
@@ -232,6 +240,9 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 | 책상 정리와 닦기 | 300 |
 
 **잘된 것**
+
+{% include figure.html src="assets/images/layered.svg" alt="사람의 요청을 LLM이나 챗봇이 해석해 무엇을 할지 정하고, ACT나 SmolVLA가 로봇팔을 움직이는 구조와 해커톤 사례 세 가지" caption="해커톤 결과물에서 반복된 구조. 위에서 무엇을 할지 정하고, 아래에서 학습된 동작이 움직인다" %}
+
 - **짧은 단일 과제를 ACT 50개 안팎으로.** 하루 안에 확실히 됐다.
 - **긴 과제를 하위 정책으로 쪼개기.** 설탕 뿌리기는 네 모델, 도넛 포장은 세 과제로 나눴다. 반대로 하나의 ACT로 5단계를 해낸 샌드위치, 목표 위치를 조건으로 넣은 Guess Who도 있다.
 - **과제 끝을 장면에 새기기.** 다 쓴 용기 떨어뜨리기, 종 치기.

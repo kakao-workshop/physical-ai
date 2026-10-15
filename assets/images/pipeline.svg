@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-labelledby="t d">
+  <title id="t">모방학습 한 바퀴</title>
+  <desc id="d">시연 수집, 학습, 추론, 평가 네 단계를 거치고 실패한 장면을 보강해 다시 학습하는 흐름</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5c5962"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #27262b; }
+    .h { font-size: 17px; font-weight: 700; }
+    .b { font-size: 13.5px; fill: #3d3b42; }
+    .s { font-size: 12.5px; font-weight: 600; }
+    .cap { font-size: 13px; fill: #5c5962; }
+  </style>
+  <rect width="800" height="300" fill="#ffffff"/>
+
+  <!-- 1 수집 -->
+  <rect x="20" y="36" width="175" height="150" rx="10" fill="#ebe6fd" stroke="#7253ed" stroke-width="1.5"/>
+  <text x="107" y="68" text-anchor="middle" class="h">① 시연 수집</text>
+  <text x="107" y="98" text-anchor="middle" class="b">사람이 리더암으로</text>
+  <text x="107" y="118" text-anchor="middle" class="b">로봇을 직접 조종</text>
+  <text x="107" y="160" text-anchor="middle" class="s" style="fill:#5a3fd1">에피소드 50개 안팎</text>
+
+  <!-- 2 학습 -->
+  <rect x="215" y="36" width="175" height="150" rx="10" fill="#e6effa" stroke="#2b6cb0" stroke-width="1.5"/>
+  <text x="302" y="68" text-anchor="middle" class="h">② 학습</text>
+  <text x="302" y="98" text-anchor="middle" class="b">영상과 관절 각도로</text>
+  <text x="302" y="118" text-anchor="middle" class="b">정책 모델을 학습</text>
+  <text x="302" y="152" text-anchor="middle" class="s" style="fill:#2b6cb0">ACT 약 30분</text>
+  <text x="302" y="170" text-anchor="middle" class="cap">(RTX 5090 참고값)</text>
+
+  <!-- 3 추론 -->
+  <rect x="410" y="36" width="175" height="150" rx="10" fill="#e3f4ec" stroke="#0d8a5f" stroke-width="1.5"/>
+  <text x="497" y="68" text-anchor="middle" class="h">③ 추론</text>
+  <text x="497" y="98" text-anchor="middle" class="b">모델이 카메라를 보고</text>
+  <text x="497" y="118" text-anchor="middle" class="b">팔을 스스로 움직임</text>
+  <text x="497" y="160" text-anchor="middle" class="s" style="fill:#0d8a5f">사람 손 없이</text>
+
+  <!-- 4 평가 -->
+  <rect x="605" y="36" width="175" height="150" rx="10" fill="#fdf0e0" stroke="#c46a00" stroke-width="1.5"/>
+  <text x="692" y="68" text-anchor="middle" class="h">④ 평가</text>
+  <text x="692" y="98" text-anchor="middle" class="b">같은 조건에서</text>
+  <text x="692" y="118" text-anchor="middle" class="b">N번 시도해</text>
+  <text x="692" y="160" text-anchor="middle" class="s" style="fill:#a85a00">성공 횟수 세기</text>
+
+  <!-- 화살표 -->
+  <line x1="196" y1="111" x2="212" y2="111" stroke="#5c5962" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="391" y1="111" x2="407" y2="111" stroke="#5c5962" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="586" y1="111" x2="602" y2="111" stroke="#5c5962" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- 되돌아가는 고리 -->
+  <path d="M692,188 L692,240 L107,240 L107,192" fill="none" stroke="#5c5962" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+  <rect x="215" y="226" width="370" height="28" rx="14" fill="#ffffff"/>
+  <text x="400" y="245" text-anchor="middle" class="b">실패한 장면을 보고 시연을 보강해 다시 학습</text>
+
+  <text x="400" y="285" text-anchor="middle" class="cap">처음에는 짧고 성공 여부가 분명한 과제로 한 바퀴를 끝까지 돌아 보는 것이 먼저다</text>
+</svg>

@@ -1,0 +1,7 @@
+{%- comment -%}
+그림. 인자: src(사이트 기준 경로), alt, caption
+{%- endcomment -%}
+<figure class="diagram">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}" loading="lazy">
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

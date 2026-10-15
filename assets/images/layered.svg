@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d">
+  <title id="t">위에서 판단하고 아래에서 움직이는 구조</title>
+  <desc id="d">사람의 요청을 LLM, 챗봇, 게임 엔진 같은 상위 단계가 해석해 무엇을 할지 정하고, ACT나 SmolVLA 같은 학습된 동작 정책이 로봇팔을 움직인다. 도넛 포장, Guess Who, Connect 4 해커톤 결과물이 이 구조였다</desc>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5c5962"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #27262b; }
+    .h { font-size: 15.5px; font-weight: 700; }
+    .b { font-size: 13px; fill: #3d3b42; }
+    .s { font-size: 12.5px; fill: #5c5962; }
+    .e { font-size: 13.5px; font-weight: 700; }
+  </style>
+  <rect width="800" height="380" fill="#ffffff"/>
+
+  <!-- 층 -->
+  <rect x="24" y="24" width="330" height="62" rx="10" fill="#f6f5f9" stroke="#b9b5c2" stroke-width="1.5"/>
+  <text x="189" y="50" text-anchor="middle" class="h">사람의 요청</text>
+  <text x="189" y="72" text-anchor="middle" class="s">음성, 채팅, 주문, 게임의 한 수</text>
+
+  <line x1="189" y1="88" x2="189" y2="108" stroke="#5c5962" stroke-width="2" marker-end="url(#ah)"/>
+
+  <rect x="24" y="112" width="330" height="72" rx="10" fill="#ebe6fd" stroke="#7253ed" stroke-width="1.5"/>
+  <text x="189" y="140" text-anchor="middle" class="h" style="fill:#5a3fd1">무엇을 할지 정한다</text>
+  <text x="189" y="164" text-anchor="middle" class="s">LLM, 챗봇, 게임 엔진, 규칙, 비전 검출</text>
+
+  <line x1="189" y1="186" x2="189" y2="206" stroke="#5c5962" stroke-width="2" marker-end="url(#ah)"/>
+
+  <rect x="24" y="210" width="330" height="72" rx="10" fill="#e3f4ec" stroke="#0d8a5f" stroke-width="1.5"/>
+  <text x="189" y="238" text-anchor="middle" class="h" style="fill:#0d6b4a">어떻게 움직일지</text>
+  <text x="189" y="262" text-anchor="middle" class="s">시연으로 학습한 동작 정책 (ACT, SmolVLA)</text>
+
+  <line x1="189" y1="284" x2="189" y2="304" stroke="#5c5962" stroke-width="2" marker-end="url(#ah)"/>
+
+  <rect x="24" y="308" width="330" height="50" rx="10" fill="#27262b"/>
+  <text x="189" y="339" text-anchor="middle" class="h" style="fill:#ffffff">로봇팔</text>
+
+  <!-- 사례 -->
+  <text x="390" y="40" class="b" font-weight="700">해커톤 결과물에서 반복된 모양</text>
+
+  <rect x="390" y="56" width="386" height="92" rx="10" fill="#ffffff" stroke="#d7d5dd" stroke-width="1.5"/>
+  <text x="404" y="80" class="e">도넛 포장 로봇 (AMD 도쿄 1위)</text>
+  <text x="404" y="104" class="s">주문 챗봇 → 메시지 큐 → 양팔이 도넛 담기,</text>
+  <text x="404" y="122" class="s">뚜껑 닫기. 세 과제로 나눠 SmolVLA로 학습.</text>
+  <text x="404" y="140" class="s">끝나면 종을 쳐서 완료를 알림</text>
+
+  <rect x="390" y="160" width="386" height="92" rx="10" fill="#ffffff" stroke="#d7d5dd" stroke-width="1.5"/>
+  <text x="404" y="184" class="e">「Guess Who」 게임 로봇 (Mistral 파리 2위)</text>
+  <text x="404" y="208" class="s">음성 인식 → LLM이 뺄 캐릭터를 정함 →</text>
+  <text x="404" y="226" class="s">목표 칸 위치를 조건으로 받는 ACT 하나가</text>
+  <text x="404" y="244" class="s">카드를 넘김</text>
+
+  <rect x="390" y="264" width="386" height="94" rx="10" fill="#ffffff" stroke="#d7d5dd" stroke-width="1.5"/>
+  <text x="404" y="288" class="e">Connect 4 상대 로봇 (AMD 파리 3위)</text>
+  <text x="404" y="312" class="s">비전으로 판을 읽음 → 게임 엔진이 수를</text>
+  <text x="404" y="330" class="s">정함 → SmolVLA가 말을 놓음</text>
+
+  <path d="M356,148 L384,100 M356,148 L384,206 M356,246 L384,312" fill="none" stroke="#c9c5cf" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>

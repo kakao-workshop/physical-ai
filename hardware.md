@@ -21,6 +21,8 @@ description: 로봇팔 Physical AI 실습에 쓰이는 로봇팔, 카메라, 계
 | **reBot Arm B601-DM** | Seeed Studio의 오픈소스 로봇팔 ([reBot-DevArm](https://github.com/Seeed-Projects/reBot-DevArm), [판매 페이지](https://www.seeedstudio.com/reBot-Arm-B601-DM-Bundle.html)) | [Seeed 요리 해커톤](hackathons.html#seeed-studio-cook-with-rebot) |
 | **LeKiwi** | SO-ARM 계열 팔을 바퀴 달린 이동 베이스에 올린 오픈소스 로봇. 국내 로보시지가 「A-Go(LeKiwi)」로 판매(2026-10 스토어 표기 990,000원) | 이동하며 집는 과제 |
 
+{% include youtube.html id="elOj2GnP7Nk" title="Agilex Piper with SmolVLA" vertical=true caption="AgileX PiPER가 SmolVLA로 공을 집어 상자에 넣는 장면(25초)" %}
+
 ### PiPER Studio
 
 [WeGo-Robotics/wego-piper-web](https://github.com/WeGo-Robotics/wego-piper-web)은 LeRobot 기반 로봇팔을 웹 화면에서 다루는 도구입니다(Apache-2.0, 2026-10-15 README 기준).
@@ -55,4 +57,6 @@ GPU가 없으면 [로봇 없이 시작하기](start-without-robot.html#gpu가-�
 로봇팔은 아니지만 같은 오픈소스 흐름에서 나온 저가 로봇입니다.
 
 - **Microduck** ([Pollen Robotics](https://pollen-robotics.com/microduck/), [GitHub](https://github.com/pollen-robotics/microduck)). 2026-08 공개된 399달러 이족보행 로봇. 공식 저장소 코드 기준 로보티즈 Dynamixel XL330 계열 서보 15개를 쓴다. Pollen Robotics는 2025-04 Hugging Face가 인수했다.
+{% include youtube.html id="RAtzEyGBGFU" title="We made a new robot." caption="Pollen Robotics의 Microduck 공개 영상(1분 26초)" %}
+
 - **Reachy Mini** ([Hugging Face 블로그](https://huggingface.co/blog/reachy-mini)). Hugging Face와 Pollen Robotics의 데스크톱 오픈소스 로봇.

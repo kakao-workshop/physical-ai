@@ -1,0 +1,11 @@
+{%- comment -%}
+유튜브 임베드. 인자: id, title, start(초), caption, vertical(세로 영상이면 true)
+{%- endcomment -%}
+<figure class="video-embed{% if include.vertical %} vertical{% endif %}">
+  <div class="video-frame">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ include.id }}{% if include.start %}?start={{ include.start }}{% endif %}"
+      title="{{ include.title | escape }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

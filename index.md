@@ -24,6 +24,20 @@ permalink: /
 | 2. 실물 로봇팔로 | 리더암으로 시연 데이터를 모으고 ACT로 학습해 로봇이 혼자 해 보게 한다 | [프로젝트 체크리스트](playbook.html), [장비](hardware.html) |
 | 3. 해커톤이나 대회로 | 다른 행사에서 어떤 방식으로 무엇을 만들었고 어디서 막혔는지 보고 과제를 고른다 | [해커톤 사례](hackathons.html) |
 
+## 모방학습은 이렇게 돌아간다
+
+사람이 리더암으로 로봇을 조종하면 팔로워암이 똑같이 따라 움직이고, 그동안의 카메라 영상과 관절 각도가 기록됩니다.
+
+{% include figure.html src="assets/images/teleop.svg" alt="사람이 리더암을 움직이면 팔로워암이 같은 각도로 따라 움직이고, 탑뷰와 손목 카메라 영상과 관절 각도가 에피소드로 기록되는 그림" caption="텔레오퍼레이션으로 시연 데이터를 모은다. 에피소드 하나가 시연 한 번이다" %}
+
+이렇게 모은 시연으로 모델을 학습시키면, 그다음부터는 사람 손 없이 로봇이 카메라를 보고 움직입니다.
+
+{% include figure.html src="assets/images/pipeline.svg" alt="시연 수집, 학습, 추론, 평가 네 단계와 실패 장면을 보강해 다시 학습하는 고리" caption="모방학습 한 바퀴. 학습 시간은 2026-09 위고로보틱스 웨비나가 소개한 참고값이다" %}
+
+실제로 이렇게 움직입니다. 로봇팔이 SmolVLA 모델로 테니스공을 집어 상자에 넣는 25초 영상입니다.
+
+{% include youtube.html id="elOj2GnP7Nk" title="Agilex Piper with SmolVLA" vertical=true caption="Agilex Piper with SmolVLA (YouTube). 사람이 조종하지 않고 모델이 움직이는 추론 장면" %}
+
 ## 용어 몇 가지
 
 | 용어 | 뜻 |
