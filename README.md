@@ -35,6 +35,12 @@
 {% include youtube.html id="fi2axVPA7DA" title="제목" start=540 caption="설명" %}
 ```
 
+## 사용한 공개 자료의 라이선스
+
+- `assets/images/hackathons/lechef-episode.jpg` — [LeRobot-worldwide-hackathon/22-leChef-leChef_dataset](https://huggingface.co/datasets/LeRobot-worldwide-hackathon/22-leChef-leChef_dataset)의 에피소드 영상에서 장면을 뽑아 이어 붙였다. [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+- `assets/images/hackathons/seengrip-episode.jpg` — [LeRobot-worldwide-hackathon/201-SeeNGripandBigBrothers-SquidGameSeeNGrip](https://huggingface.co/datasets/LeRobot-worldwide-hackathon/201-SeeNGripandBigBrothers-SquidGameSeeNGrip)의 에피소드 영상에서 장면을 뽑아 이어 붙였다. [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+- 나머지 그림(`assets/images/*.svg`, `pac2026-missions.svg`)은 이 저장소에서 직접 그렸다. 영상은 유튜브 임베드로만 보여 준다.
+
 ## 로컬 미리보기
 
 GitHub Pages와 같은 `github-pages` gem으로 빌드합니다. Ruby 3.x가 필요합니다.

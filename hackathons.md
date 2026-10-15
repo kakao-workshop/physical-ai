@@ -58,9 +58,11 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 
 ### Seeed × Hackster Embodied AI Hackathon
 
-- 2025-03-22~23, 미국 마운틴뷰 Circuit Launch(GTC 2025 주말). Seeed Studio, Hugging Face, NVIDIA, Hackster.io. 116명.
+- 2025-03-22~23, 미국 마운틴뷰 Circuit Launch(GTC 2025 주말). Seeed Studio, Hugging Face, NVIDIA, Hackster.io. 규모는 출처마다 다르다(행사 페이지 참석 116명, Seeed 영상 설명 「약 150명 지원, 30명 가까운 개발자」).
 - **방식**. 주최가 SO-ARM100 키트, Jetson Orin NX, 카메라와 마이크를 제공했다. 자유 주제이고 LeRobot 사용이 필수였다. 문서 30, 영상 30, 코드와 기여 20, 창의성 20으로 채점했다.
 - **1위**. SO-100 두 쌍으로 **양팔 협업 그릇 옮기기**. 공개된 지 사흘 된 GR00T N1을 양팔용으로 고쳐 미세조정했고 ACT와 Pi0도 실험했다. 남긴 교훈은 「Calibration is Important!!!」.
+{% include youtube.html id="QvzhsDliGII" title="Seeed Embodied AI Hackathon San Jose" caption="Seeed Studio 공식 영상(2025-04-17, 6분 43초). 36시간 동안의 개발과 데모" %}
+
 - 출처. [대회 페이지](https://www.hackster.io/contests/embodiedAI), [수상 발표](https://www.hackster.io/news/embodied-ai-hackathon-winners-announced-2dc69c76942e), [1위 글](https://www.hackster.io/firebreathing-rubber-duckies/running-lerobot-so-100-arm-on-nvidia-isaac-gr00t-n1-458189), [1위 코드](https://github.com/JChunX/apple_pie/tree/seeed_hacks)
 
 ### Mistral AI Robotics Hackathon
@@ -69,6 +71,8 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 - **방식**. 자유 주제(Mistral 모델 활용). 데이터셋과 2분 영상을 Hugging Face에 올리고 피치로 심사.
 - **2위 LeCopain**. 동물 캐릭터로 **「Guess Who?」 게임을 하는 로봇**. 음성을 Whisper로 받아 적고, Mistral 소형 모델이 보드를 보고 「제거할 동물」을 정하고, **목표 칸 위치를 조건으로 받는 ACT 정책 하나**가 카드를 넘긴다. 시연 96개.
 - 다른 팀 과제(데이터셋 이름 기준). 그림 그리기, 피아노, 캔 쌓기, 물 붓기, 접시 닦기, 공 쌓기.
+{% include youtube.html id="A4-CyfDBj3o" title="Mistral AI Robotics Hackathon" caption="행사 스케치 영상(EPYTOME, 2025-04-25, 3분 45초). 설명란 기준 「20 teams. 100 talents. 30 hours.」" %}
+
 - 출처. [Luma](https://luma.com/roboticshack), [Hugging Face 조직](https://huggingface.co/roboticshack), [LeCopain 블로그](https://huggingface.co/blog/Beegbrain/guess-who-so100-mistral), [LeCopain 코드](https://github.com/alexcbb/LeCopain)
 
 ### LeRobot Worldwide Hackathon
@@ -90,6 +94,12 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 | 13 | LeCyborg | 팔에 **근전도(EMG) 센서**를 붙였다 |
 | 20 | ACE (KAIST, 대구) | SmolVLA로 두 팔이 공중에서 물건 주고받기 |
 
+{% include figure.html src="assets/images/hackathons/lechef-episode.jpg" alt="1위 leChef 팀의 시연 에피소드 장면. 위 줄은 위쪽 카메라로 본 재료 칸과 접시, 아래 줄은 손목 카메라로 본 빵 집기" caption="1위 leChef의 시연 데이터 한 에피소드(20초)를 넷으로 나눈 장면. 위는 위쪽 카메라, 아래는 손목 카메라. 재료 칸에서 빵을 집어 접시에 놓는다. 출처 Hugging Face 데이터셋 LeRobot-worldwide-hackathon/22-leChef-leChef_dataset (Apache-2.0)" %}
+
+{% include youtube.html id="28-14kJCufY" title="LeChef - Hackathon LeRobot Worldwide" caption="1위 leChef 팀의 제출 영상(2025-06-15, 1분 9초)" %}
+
+{% include youtube.html id="FLxFBU-Kodk" title="What can you build during 48h Robotics Hackathon?" caption="Hugging Face 공식 1주년 회고 영상(2026-06-22, 7분 27초). 셔츠 접기부터 레고 분류 공장까지 수상작을 모아 보여 준다" %}
+
 - 첫날 접속이 몰려 Hugging Face 서버가 멈췄다. 한 참가자는 「a lot of things go wrong and it's usually not clear why」라고 남겼다.
 - 출처. [Hugging Face 조직](https://huggingface.co/LeRobot-worldwide-hackathon), [과제 안내 PDF](https://huggingface.co/spaces/LeRobot-worldwide-hackathon/README/resolve/main/Challenges.pdf), [수상작](https://huggingface.co/spaces/LeRobot-worldwide-hackathon/all-winners), [미시간대 후기](https://robotics.umich.edu/news/2025/hackathon-qa-brouze), [We broke Hugging Face](https://robotsandstartups.substack.com/p/sad-face-we-broke-hugging-face)
 
@@ -104,6 +114,8 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
   - 미국 2위 **Sprinkle Robot**. 설탕을 뿌리고 버튼으로 접시를 돌린다. SmolVLA 시연 170개, 긴 과제를 **잡기, 기울이기, 누르기, 놓기 네 모델로 쪼갰다.**
   - 미국 3위. 셔츠 개기. 하루 반 만에 시연 수집과 시뮬레이션 시나리오, 학습된 보상 함수로 오류 회복.
   - 중국 1위. 펜과 지우개 모으고 책상 닦기. GR00T N1.5, 시연 300개(실물 90%, 시뮬레이션 10%).
+{% include youtube.html id="mr07jcbbZc8" title="Embodied AI Hackathon 2025 Mountain View" caption="마운틴뷰 행사 영상(Solo Tech, 2025-11-07, 2분 8초). 설명란 기준 350명 이상, 20팀 이상. 말차 로봇 등이 나온다" %}
+
 - **막힌 곳**. 현장에서 카메라 하나가 단락됐다. Jetson에 USB 2.0 카메라 3대 이상을 붙이기가 매우 어려웠다. LeRobot 데이터셋 형식을 다른 모델용으로 직접 변환해야 했다.
 - 출처. [회고](https://www.seeedstudio.com/blog/2025/11/06/2025-embodied-ai-hackathon-recap-we-built-home-cooking-robot/), [Matcha Bot](https://www.hackster.io/sigrobotics/matcha-bot-sigrobotics-embodied-ai-hackathon-1st-place-f0e520), [중국 1위 코드](https://github.com/Lee-LEO-H/Lerobot-GR00TN1.5), [영상](https://www.youtube.com/watch?v=Y2ca3on6dd8)
 
@@ -116,10 +128,18 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
   - **미션 2**(2일). 자유 주제, 100점 채점. 공식 README 템플릿(미션 설명, 창의성, 기술 구현, 사용 편의)과 학습 기록을 담은 GitHub 저장소를 제출했다. 수상팀은 코드, 데이터셋, 모델, 영상 공개가 의무였다. 도시별 1위 1만 달러.
 - **결과물**
   - 도쿄 1위. **도넛 가게 테이크아웃 포장**. 주문 챗봇 → 메시지 큐 → 양팔 로봇. SmolVLA, 학습 시연 120개(실패 포함 180개 이상 수집). 과제를 초코 도넛, 딸기 도넛, 뚜껑 닫기 셋으로 나눴다. 모델이 끝을 판단하지 못해 **USB 종을 쳐서 완료를 알렸다.**
-  - 파리 3위. **Connect 4(사목) 상대 로봇**. 비전으로 판을 읽고 게임 엔진이 수를 정하고 SmolVLA가 말을 놓는다.
+  - 도쿄 2위(쿠후샤). **파스타를 삶아 담고 핸드벨로 다 됐다고 알리는** 로봇. 사람 동작을 모방학습해 조리 동작과 벨 울리기를 익혔다.
+  - 파리 3위(3위는 도시마다 5팀). **Connect 4(사목) 상대 로봇**. 비전으로 판을 읽고 게임 엔진이 수를 정하고 SmolVLA가 말을 놓는다.
+  - 파리 3위 Tihado(Team 13) **EatAble**. 팔을 들기 어려운 사람이 먹고 싶은 것을 말하면 로봇이 찾아 집어 입에 넣어 주는 식사 보조 로봇.
   - 그 밖에 에어하키(pi0.5), 음성 지시 보조 장치, 다음 공구를 예측해 건네는 보조 시스템.
+
+{% include youtube.html id="7p45LBK-4oE" title="AMD Open Robotics Hackathon in Tokyo 1st prize demo" caption="도쿄 1위 도넛 포장 로봇 데모(팀원 채널, 2025-12-20, 2분 6초). 웹 주문에 따라 SmolVLA가 도넛을 상자에 담는다" %}
+
+{% include youtube.html id="qcOxWQDa9SU" title="AI 로봇이 파스타를 삶는다 (LeRobot / AMD Robotics Hackathon)" caption="도쿄 2위 파스타 로봇(쿠후샤 채널, 2026-02-04, 1분 43초)" %}
+
+{% include youtube.html id="Mj4wDKEM4vM" title="Carrot - 3rd place winner at AMD Open Robotics Hackathon in Paris" caption="파리 3위 EatAble 식사 보조 로봇(팀원 채널, 2025-12-14, 1분 15초)" %}
 - **막힌 곳**. 서보 ID 누락, 물체 표면의 조명 반사, 노출 설정이 먹지 않음, 학습 시간 부족으로 모델 교체(「Done is better than perfect」). 공식 FAQ에 따르면 학습 중 영상 디코딩 오류는 **녹화를 Ctrl+C로 끊어 영상 파일이 손상**된 경우가 가장 흔하다. 카메라가 흔들리면 USB 포트나 허브를 나눈다.
-- 출처. [AMD 회고](https://www.amd.com/en/developer/resources/technical-articles/2025/amd-open-robotics-hackathon-recap.html), [안내 저장소](https://github.com/ROCm/AMD_Hackathon/tree/main/robotics/robotics_2025), [제출 템플릿](https://github.com/AlexHe99/AMD_Robotics_Hackathon_2025_ProjectTemplate), [도쿄 1위](https://github.com/masato-ka/GreateAkihabra_9_AMDOpenRoboticsHackathon), [파리 3위](https://github.com/jgorostegui/AMD_Robotics_Hackathon_Team15), [참가 후기(일본어)](https://zenn.dev/mkj/articles/317e39955e1343)
+- 출처. [AMD 회고](https://www.amd.com/en/developer/resources/technical-articles/2025/amd-open-robotics-hackathon-recap.html), [안내 저장소](https://github.com/ROCm/AMD_Hackathon/tree/main/robotics/robotics_2025), [제출 템플릿](https://github.com/AlexHe99/AMD_Robotics_Hackathon_2025_ProjectTemplate), [도쿄 1위](https://github.com/masato-ka/GreateAkihabra_9_AMDOpenRoboticsHackathon), [파리 3위 Connect 4](https://github.com/jgorostegui/AMD_Robotics_Hackathon_Team15), [파리 3위 EatAble](https://github.com/tihado/AMD_Robot_Hackathon), [참가 후기(일본어)](https://zenn.dev/mkj/articles/317e39955e1343)
 
 ### Seeed Studio Cook with reBot
 
@@ -136,6 +156,8 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 - 온라인 시뮬레이션 2026-02~04, 실기 결선 2026-06-02(ICRA 2026, 빈). 학계 조직위와 Lightwheel.
 - **방식**. SO-ARM101 양팔과 카메라 3대로 긴소매, 반소매, 긴바지, 반바지를 갠다. 시뮬레이션은 자동 판정(종류당 20벌, 본 옷 10과 처음 보는 옷 10), 실기는 부분 점수. 온라인 62팀, 결선 8팀.
 - **결과**. 실기 1위 895점, 2위 865점, 3위 762.5점. 시뮬레이션 1위 팀의 성공률은 79.63%였다. 시뮬레이션 모델을 실물에 그대로 옮기는 것은 실패했고, 이미지 크기를 줄이는 방식만 달라도 성공률이 크게 떨어졌다.
+{% include youtube.html id="mTohakalKz8" title="How I Beat 61 Teams at Robot Laundry Folding in Simulation (with RL)" caption="시뮬레이션 1위, 실기 2위 참가자의 해설 영상 1부(2026-07-19, 1시간 17분). 양팔 SO-ARM101로 옷 네 종류를 개는 과제와 강화학습 적용" %}
+
 - 출처. [공식](https://lehome-challenge.com), [2위 팀 논문](https://huggingface.co/papers/2606.27163)
 
 ### 그 밖의 해외 행사
@@ -154,6 +176,12 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 - **SeeNGrip — 서울 1등, 글로벌 8위.** 휴대폰 화면으로 색을 보여 주면 그 색의 판을 집어 핀에 꽂는다(「오징어 게임 데모」). 그리퍼와 카메라를 직접 만들었다. 호스트 후기 기준 「ACT, 50에피소드」, 성공률은 「체감상 90퍼센트 정도」. 공개 데이터셋은 SO-101, 시연 50개, 카메라 2대.
 - **MOS — 글로벌 9위.** 로봇 두 대에 잡기와 버리기 모델을 따로 써서 모기와 나방 잡기.
 - **AI 선풍기 — 글로벌 25위.** 얼굴을 따라가며 부채질.
+{% include figure.html src="assets/images/hackathons/seengrip-episode.jpg" alt="SeeNGrip 팀의 시연 에피소드 장면. 위 줄은 휴대폰 화면이 빨간색일 때 로봇이 빨간 삼각형 판을 집어 가운데 핀에 꽂는 모습, 아래 줄은 같은 순간의 손목 카메라" caption="서울 1등 SeeNGrip의 시연 데이터 한 에피소드(15초)를 넷으로 나눈 장면. 왼쪽 위 휴대폰 화면이 빨간색이 되면 빨간 삼각형 판을 집어 가운데 핀에 꽂는다. 위는 노트북 카메라, 아래는 손목에 단 휴대폰 카메라. 출처 Hugging Face 데이터셋 LeRobot-worldwide-hackathon/201-SeeNGripandBigBrothers-SquidGameSeeNGrip (Apache-2.0)" %}
+
+{% include youtube.html id="WzuDLdXBKHU" title="Hugging Face LeRobot Hackathon SEOUL #1 SeeNGrip" caption="SeeNGrip 팀 데모 영상(2025-06-20, 1분 1초)" %}
+
+{% include youtube.html id="HgN0qIFSd8I" title="허깅페이스 르로봇 글로벌 해커톤, Physical AI 가 진짜 온다" caption="서울 호스트 수도리무브의 현장 영상(2025-06-19, 16분 56초)" %}
+
 - 순위 밖에서는 SmolVLA로 「왼쪽 위 초록 공 집어」 같은 명령 따르기(집기는 불완전), **13시 데모는 성공하고 17시 데모는 실패**한 서랍 열고 사탕 담기 등이 있었다.
 - 호스트 교훈. 「확실한 성공사례」 하나가 전체의 기준점이 됐다. 몇 시간 뒤 같은 것이 안 되는 재현성 문제가 있었다. 멀쩡한 로봇도 부러져 **예비 3D 프린트 부품**이 유용했다. 영상 평가라 영상에 들인 시간이 결과에 영향을 줬다.
 - 출처. [호스트 후기 1](https://sudormrf.run/2025/06/24/huggingface-lerobot-hackathon-review/), [호스트 후기 2](https://jonhpark7966.github.io/lerobot-hackathon-seoul-2025/), [SeeNGrip 데이터셋](https://huggingface.co/datasets/LeRobot-worldwide-hackathon/201-SeeNGripandBigBrothers-SquidGameSeeNGrip)
@@ -194,12 +222,16 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 - 2026-08-03~08, KAIST. 학생 비영리단체 로보틱어스 주최. KAIST와 서울대 각 5팀 30명, 2일 교육 뒤 나흘 해커톤(합숙 100시간).
 - 팀마다 구동기 6축과 Jetson AGX를 받아 로봇 자체를 만들었다. 공통 미션은 「실생활에서 사람보다 효율적으로 쓰일 로봇」.
 - 최우수는 아기 요람 로봇, 우수는 팔 끝 휴대폰이 사용자 머리 방향을 따라가는 로봇팔. **10팀 저장소와 주최측 가이드가 모두 공개**돼 있다.
+{% include youtube.html id="WTTLViPGILA" title="로보틱어스 100시간 해커톤" caption="충청투데이 취재 영상(2026-08-21, 7분 39초). 팀별로 만든 로봇을 보여 준다" %}
+
 - 출처. [행사 페이지](https://robotic-us.com/events/robot-hackathon-2026), [GitHub](https://github.com/robotic-us)
 
 ### PAC 2026 피지컬 AI 챌린지
 
 - 2026-10-09~10, 경북대 크리에이티브파크. 대구시 주최. 지원 147팀 531명, 본선 59팀 206명(로보틱스 미션 21팀, IR 피칭 38팀). 대상은 경북대 Yard-X팀이고 21개 팀이 수상했다. 대상팀의 결과물은 미확인.
 - **로보틱스 미션** (공식 페이지 기준)
+
+{% include figure.html src="assets/images/hackathons/pac2026-missions.svg" alt="PAC 2026 로보틱스 미션 네 가지. 사과 선별, 칸막이 포장, 비닐 뜯어 접기, 자율주제의 기본 과제와 통과 기준" caption="PAC 2026 로보틱스 미션 네 가지(공식 페이지 내용을 바탕으로 그림)" %}
 
 | 미션 | 기본 과제 | 통과 기준 | 장비 |
 |---|---|---|---|
@@ -209,6 +241,8 @@ description: 로봇팔을 쓰는 Physical AI 해커톤 국내외 사례(2025-03~
 | 자율주제 | 문제 정의서(무엇을, 왜, 어디까지)가 기본 과제를 대신하고 심사위원이 난이도를 따로 평가 | — | SO-101 |
 
 - 미션마다 **확장 방향**을 따로 적었다(예. 3등급 분류, 여러 면 검사, 손상 방지의 정량 근거, 애매한 사과 따로 빼기). 기본 과제로 바닥을 정하고 확장으로 차이를 내는 구조다.
+{% include youtube.html id="TwFH4eh-4QA" title="PAC 2026 글로벌 AI 로봇 해커톤 참가 모집" caption="참가 모집 영상(스마트크리에이터, 2026-09-22, 1분)" %}
+
 - 출처. [공식](https://ainnov.co.kr/pac2026), [경북매일 결과 기사](https://www.kbmaeil.com/article/20261011500321)
 
 ## 결과물 경향

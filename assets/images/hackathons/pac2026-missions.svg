@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" aria-labelledby="t d">
+  <title id="t">PAC 2026 로보틱스 미션 네 가지</title>
+  <desc id="d">사과 선별, 칸막이 포장, 비닐 뜯어 접기, 자율주제 네 미션의 기본 과제와 통과 기준, 장비. 기본 과제로 바닥을 정하고 확장 방향으로 차이를 낸다</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #27262b; }
+    .h { font-size: 15px; font-weight: 700; }
+    .b { font-size: 12.5px; fill: #3d3b42; }
+    .p { font-size: 12.5px; font-weight: 700; }
+    .t { font-size: 11.5px; fill: #5c5962; }
+  </style>
+  <rect width="800" height="330" fill="#ffffff"/>
+
+  <!-- 사과 선별 -->
+  <rect x="12" y="12" width="182" height="270" rx="10" fill="#fff5f3" stroke="#d9534f" stroke-width="1.5"/>
+  <text x="26" y="38" class="h">사과 선별</text>
+  <rect x="34" y="56" width="70" height="44" rx="4" fill="#efe7dc" stroke="#b9a68c"/>
+  <circle cx="52" cy="72" r="9" fill="#d9363e"/><circle cx="74" cy="84" r="9" fill="#e86f3a"/><circle cx="90" cy="68" r="9" fill="#c8323a"/>
+  <rect x="120" y="70" width="28" height="30" rx="2" fill="#fff" stroke="#8a8590"/><text x="134" y="114" text-anchor="middle" class="t">상</text>
+  <rect x="152" y="70" width="28" height="30" rx="2" fill="#fff" stroke="#8a8590"/><text x="166" y="114" text-anchor="middle" class="t">중</text>
+  <text x="26" y="142" class="b">트레이 위 사과 5개를</text>
+  <text x="26" y="160" class="b">비전으로 찾아 색 기준</text>
+  <text x="26" y="178" class="b">두 등급 상자에 적재</text>
+  <text x="26" y="212" class="p" style="fill:#b02a2f">5개 중 4개 이상</text>
+  <text x="26" y="232" class="t">낙하, 굴림 없이</text>
+  <text x="26" y="266" class="t">장비 PiPER</text>
+
+  <!-- 칸막이 포장 -->
+  <rect x="210" y="12" width="182" height="270" rx="10" fill="#f2f7fd" stroke="#2b6cb0" stroke-width="1.5"/>
+  <text x="224" y="38" class="h">칸막이 포장</text>
+  <g transform="translate(256,54)">
+    <rect width="66" height="66" fill="#fff" stroke="#6b7a8c" stroke-width="1.5"/>
+    <path d="M22,0 V66 M44,0 V66 M0,22 H66 M0,44 H66" stroke="#6b7a8c" stroke-width="1.2"/>
+    <rect x="4" y="4" width="14" height="14" rx="3" fill="#9fc3ea"/><rect x="26" y="26" width="14" height="14" rx="3" fill="#9fc3ea"/><rect x="48" y="48" width="14" height="14" rx="3" fill="#9fc3ea"/>
+  </g>
+  <rect x="338" y="96" width="16" height="16" rx="3" fill="#9fc3ea" stroke="#5f8fc4"/>
+  <text x="224" y="142" class="b">3×3 칸막이 상자의 빈 칸에</text>
+  <text x="224" y="160" class="b">완충 포장 블록 5개를</text>
+  <text x="224" y="178" class="b">비전으로 찾아 하나씩</text>
+  <text x="224" y="212" class="p" style="fill:#1f5794">5개 중 4개 이상 안착</text>
+  <text x="224" y="232" class="t">칸막이 무너짐 없이</text>
+  <text x="224" y="266" class="t">장비 PiPER</text>
+
+  <!-- 비닐 뜯어 접기 -->
+  <rect x="408" y="12" width="182" height="270" rx="10" fill="#f3faf6" stroke="#0d8a5f" stroke-width="1.5"/>
+  <text x="422" y="38" class="h">비닐 뜯어 접기</text>
+  <rect x="430" y="60" width="52" height="16" rx="8" fill="#cfe3d8" stroke="#6aa58a"/>
+  <path d="M482,68 H520 V100 H482" fill="#eef7f2" stroke="#6aa58a" stroke-dasharray="4 3"/>
+  <rect x="534" y="76" width="34" height="34" fill="none" stroke="#0d8a5f" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="551" y="124" text-anchor="middle" class="t">15×15cm</text>
+  <text x="422" y="142" class="b">롤 비닐을 당겨 절취선에서</text>
+  <text x="422" y="160" class="b">한 장 뜯고, 접어서</text>
+  <text x="422" y="178" class="b">15×15cm 칸 안에 넣기</text>
+  <text x="422" y="212" class="p" style="fill:#0a6b49">3번 중 2번 이상</text>
+  <text x="422" y="232" class="t">칸 안에서 10초 유지</text>
+  <text x="422" y="266" class="t">장비 SO-101 리더, 팔로워</text>
+
+  <!-- 자율주제 -->
+  <rect x="606" y="12" width="182" height="270" rx="10" fill="#f7f4fd" stroke="#7253ed" stroke-width="1.5"/>
+  <text x="620" y="38" class="h">자율주제</text>
+  <rect x="650" y="54" width="60" height="70" rx="4" fill="#fff" stroke="#8a7fc0"/>
+  <path d="M660,72 H700 M660,86 H700 M660,100 H690" stroke="#b3a8e6" stroke-width="3" stroke-linecap="round"/>
+  <text x="680" y="66" text-anchor="middle" class="t" style="font-size:9.5px">문제 정의서</text>
+  <text x="620" y="142" class="b">무엇을, 왜, 어디까지</text>
+  <text x="620" y="160" class="b">풀지 적은 문제 정의서가</text>
+  <text x="620" y="178" class="b">기본 과제를 대신한다</text>
+  <text x="620" y="212" class="p" style="fill:#5a3fd1">난이도를 따로 평가</text>
+  <text x="620" y="232" class="t">기본 과제와 같은 배점</text>
+  <text x="620" y="266" class="t">장비 SO-101</text>
+
+  <text x="400" y="314" text-anchor="middle" class="b">미션마다 「기본 과제와 통과 기준」으로 바닥을 정하고, 「확장 방향」(예. 3등급 분류, 여러 면 검사)으로 차이를 낸다</text>
+</svg>
