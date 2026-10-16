@@ -33,9 +33,11 @@ description: 실물 로봇 없이 시뮬레이터와 공개 데이터셋으로 P
 - [WeGo-Robotics/wego-piper-web](https://github.com/WeGo-Robotics/wego-piper-web) (Apache-2.0)
 - LeRobot 기반 로봇팔을 웹 화면에서 다루는 도구다. README에 따르면 MuJoCo 가상 로봇으로 실물 없이 시작할 수 있고, GPU가 없어도 설치해서 수집, 시뮬레이션, 조종을 해 볼 수 있다. 학습과 추론에는 NVIDIA GPU가 필요하다.
 - 요구 환경은 Ubuntu 22.04 이상과 Docker(Docker Compose v2)다.
+- PiPER Studio 자체는 Linux 전용이지만, 정책 서버는 맥에서 MPS(Apple GPU)로 돌려 봤다 → [맥에서 해 보기](mac.html#piper-studio-정책-서버를-맥에서).
 
 ## GPU가 없거나 약할 때
 
+- 맥북(Apple Silicon)이면 LeRobot 학습과 추론, ALOHA 시뮬레이션 평가까지 맥 GPU로 된다. 숫자와 명령은 [맥에서 해 보기](mac.html).
 - 위 교재는 CPU와 Google Colab 경로를 따로 안내한다.
 - 2026-09 위고로보틱스 웨비나에서 소개한 참고값. ACT와 SmolVLA의 **추론**은 RTX 4050 노트북 GPU로도 충분했다. **학습**은 RTX 5090 기준 ACT 약 30분, SmolVLA 약 2시간이면 쓸 만한 가중치가 나왔다. 데이터 양과 과제에 따라 달라진다.
 

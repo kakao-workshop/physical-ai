@@ -6,6 +6,11 @@ description: 사이트에 무엇을 언제 더했는지
 
 # 업데이트 기록
 
+## 2026-10-17
+
+- [맥에서 해 보기 (실측)](mac.html)를 더했다. 맥북 M5 Max에서 LeRobot ACT와 SmolVLA의 학습 속도와 메모리, 추론 지연, SmolVLA를 카메라 2대로 학습할 때 빼야 할 옵션, 로봇 없이 ALOHA 시뮬레이션으로 학습하고 평가한 결과(50회 중 56%), PiPER Studio 정책 서버를 맥 GPU로 돌린 결과, 팔을 맥에 바로 연결할 때의 CAN 어댑터 이야기. 측정 스크립트도 함께 올렸다.
+- [장비](hardware.html)의 계산 장비 표와 [로봇 없이 시작하기](start-without-robot.html)에 맥 실측으로 가는 링크를 넣었다.
+
 ## 2026-10-16
 
 - [해커톤 사례](hackathons.html)의 Seeed × Hackster에 수상작 다섯 개 표, Tic! 시연 장면, OmniFetch와 현장 영상을 넣었다. Mistral 파리에는 다섯 팀 시연 장면 갤러리를 넣었다. Revolute Boston은 독립 절로 올려 장비와 일정 그림, 2위 YesChef 영상을 넣었다.

@@ -15,6 +15,7 @@
 | `hackathons.md` | 로봇팔 Physical AI 해커톤 사례 |
 | `hardware.md` | 로봇팔, 카메라, 계산 장비 |
 | `videos.md` | 공개 영상 목록과 요약 |
+| `mac.md` | 맥북에서 학습, 추론, 시뮬레이션, PiPER 정책 서버를 돌려 본 실측 |
 | `changelog.md` | 업데이트 기록 |
 
 ## 자료를 더할 때 원칙

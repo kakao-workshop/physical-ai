@@ -71,6 +71,8 @@ description: 로봇팔 Physical AI 실습에 쓰이는 로봇팔, 카메라, 계
 | ACT 학습 | RTX 5090에서 약 30분 | 같음 |
 | SmolVLA 학습 | RTX 5090에서 약 2시간 | 같음 |
 | 로봇 쪽 추론 | NVIDIA Jetson Orin NX | Seeed 요리 해커톤 |
+| ACT 학습, 추론 (맥) | M5 Max 36GB에서 20K 스텝 약 1.3~1.8시간, 추론 13ms | [맥에서 해 보기](mac.html) 실측 |
+| SmolVLA 학습, 추론 (맥) | 같은 맥에서 batch 8 20K 약 2.9시간, 추론 193ms | 같음 |
 
 GPU가 없으면 [로봇 없이 시작하기](start-without-robot.html#gpu가-없거나-약할-때)의 CPU, Colab 경로부터 시작한다.
 
